@@ -1,20 +1,59 @@
+html,
+body {
+  margin: 0;
+  background: #0f1624;
+  color: #ffffff;
+}
+
+a:link,
+a:visited {
+  color: white;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 
+h1 {
+  color: rgb(242, 245, 247);
+  text-align: left;
+}
+
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0px;
   width: 100%;
-  height: 100%;
+  height: 50px;
+  background: #0f1624;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-item {
   display: inline;
   margin-right: 2rem;
+  color: rgb(182, 182, 182);
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: white;
 }
 
 .section {
   height: 100vh;
+  margin-top: 50px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
 }

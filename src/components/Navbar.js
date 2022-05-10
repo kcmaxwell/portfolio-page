@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 export default function Navbar() {
   return (
@@ -12,7 +13,7 @@ export default function Navbar() {
               to="project-section"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
             >
               Projects
@@ -24,7 +25,7 @@ export default function Navbar() {
               to="open-source-section"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
             >
               Open Source
@@ -36,13 +37,23 @@ export default function Navbar() {
               to="contact-section"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
             >
               Contact
             </Link>
           </li>
         </ul>
+
+        <div className="nav-icons">
+          <a href="https://github.com/kcmaxwell">
+            <AiFillGithub className="nav-icon" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/kristopher-maxwell-566970161/">
+            <AiFillLinkedin className="nav-icon" />
+          </a>
+        </div>
       </div>
     </nav>
   );
