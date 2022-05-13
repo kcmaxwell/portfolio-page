@@ -34,13 +34,13 @@ export default function Navbar() {
           <li className="nav-item">
             <Link
               activeClass="active"
-              to="contact-section"
+              to="about-section"
               spy={true}
               smooth={true}
               offset={-50}
               duration={500}
             >
-              Contact
+              About
             </Link>
           </li>
         </ul>

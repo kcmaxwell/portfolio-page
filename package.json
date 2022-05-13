@@ -8,6 +8,8 @@
   ],
   "main": "src/index.js",
   "dependencies": {
+    "@coreui/coreui": "4.1.5",
+    "@coreui/react": "4.2.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "4.3.1",

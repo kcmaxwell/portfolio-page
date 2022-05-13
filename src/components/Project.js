@@ -1,16 +1,26 @@
 import React from "react";
+import {
+  CCard,
+  CCardImage,
+  CCardBody,
+  CCardTitle,
+  CCardText,
+  CButton
+} from "@coreui/react";
 
 export default function Project({ img, title, description, code, demo }) {
   return (
-    <div className="project">
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <a href={code}>
-        <button>Code</button>
-      </a>
-      <a href={demo}>
-        <button>Demo</button>
-      </a>
-    </div>
+    <CCard className="project-card h-100">
+      <CCardBody>
+        <CCardTitle>{title}</CCardTitle>
+        <CCardText>{description}</CCardText>
+        <CButton className="card-button" href={code}>
+          Github
+        </CButton>
+        <CButton className="card-button" href={demo}>
+          Demo
+        </CButton>
+      </CCardBody>
+    </CCard>
   );
 }
